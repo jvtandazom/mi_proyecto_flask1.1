@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>{{ welcome_message }}</h1>
+        <p>Este es un proyecto Flask con plantillas Jinja2</p>
+        <a href="{{ url_for('about') }}" class="btn">Conoce más</a>
+    </div>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>✨ Plantillas Dinámicas</h3>
+        <p>Usamos herencia de plantillas con Jinja2</p>
+    </div>
+    <div class="feature">
+        <h3>🎨 Estilos CSS</h3>
+        <p>Diseño moderno y responsive</p>
+    </div>
+    <div class="feature">
+        <h3>🚀 Fácil de Extender</h3>
+        <p>Estructura organizada para crecimiento</p>
+    </div>
+</section>
+{% endblock %}

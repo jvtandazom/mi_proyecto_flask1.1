@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="about-section">
+    <h1>Acerca de Nosotros</h1>
+    <p>{{ description }}</p>
+    
+    <div class="about-content">
+        <h2>Tecnologías Utilizadas</h2>
+        <ul>
+            <li>Python Flask</li>
+            <li>Jinja2 Templates</li>
+            <li>HTML5 y CSS3</li>
+            <li>Git y GitHub</li>
+        </ul>
+        
+        <h2>Características del Proyecto</h2>
+        <p>Este proyecto demuestra el uso de:</p>
+        <ul>
+            <li>Herencia de plantillas</li>
+            <li>Variables dinámicas</li>
+            <li>Bloques de contenido</li>
+            <li>Archivos estáticos</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
